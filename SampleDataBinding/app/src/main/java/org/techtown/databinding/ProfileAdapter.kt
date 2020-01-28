@@ -13,10 +13,10 @@ class ProfileAdapter (private val context : Context) : RecyclerView.Adapter<Prof
     var data = listOf<ProfileData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProfileVH {
-       val view = LayoutInflater.from(context).inflate(R.layout.rcv_list_item,parent,
-            false)
+        val binding = RcvListItemBinding.inflate(
+            LayoutInflater.from(context), parent, false)
 
-        return ProfileVH(view)
+        return ProfileVH(binding)
     }
 
     override fun getItemCount(): Int = data.size
@@ -25,11 +25,9 @@ class ProfileAdapter (private val context : Context) : RecyclerView.Adapter<Prof
         holder.onBind(data[position])
     }
 
-    class ProfileVH(view : View) : RecyclerView.ViewHolder(view){
-        var binding : RcvListItemBinding? = DataBindingUtil.bind(view)
-
+    class ProfileVH(val binding : RcvListItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun onBind(data : ProfileData){
-            binding?.user = data
+            binding.user = data
         }
 
     }
