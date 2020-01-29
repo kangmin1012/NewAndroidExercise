@@ -24,7 +24,15 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mainRcv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </LinearLayout>
 

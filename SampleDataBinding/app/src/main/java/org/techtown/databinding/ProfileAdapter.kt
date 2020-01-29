@@ -6,14 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import org.techtown.databinding.databinding.RcvListItemBinding
+import com.bumptech.glide.Glide
+import org.techtown.databinding.databinding.ListItemBinding
 
 class ProfileAdapter (private val context : Context) : RecyclerView.Adapter<ProfileAdapter.ProfileVH>(){
 
     var data = listOf<ProfileData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProfileVH {
-        val binding = RcvListItemBinding.inflate(
+        val binding = ListItemBinding.inflate(
             LayoutInflater.from(context), parent, false)
 
         return ProfileVH(binding)
@@ -25,7 +26,7 @@ class ProfileAdapter (private val context : Context) : RecyclerView.Adapter<Prof
         holder.onBind(data[position])
     }
 
-    class ProfileVH(val binding : RcvListItemBinding) : RecyclerView.ViewHolder(binding.root){
+    class ProfileVH(val binding : ListItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun onBind(data : ProfileData){
             binding.user = data
         }
