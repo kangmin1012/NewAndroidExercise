@@ -7,11 +7,20 @@
             name="activity"
             type="org.techtown.databinding.MainActivity" />
 
+        <variable
+            name="site"
+            type="org.techtown.databinding.ObservableData" />
+
 
     </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <Button
@@ -28,13 +37,25 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            tools:srcCompat="@tools:sample/avatars" />
+        <EditText
+            android:id="@+id/siteEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@={site.site}" />
+
+        <TextView
+            android:id="@+id/siteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{site.site}"
+            tools:text="siteName"/>
+
 
     </LinearLayout>
+
+    </ScrollView>
 
 
 </layout>
