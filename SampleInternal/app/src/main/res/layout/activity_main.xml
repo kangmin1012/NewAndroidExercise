@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your message"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Button
+        android:id="@+id/bt_internal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal"/>
+
+
+    <Button
+        android:id="@+id/bt_external"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edit"/>
+
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/bt_print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print message" />
+
+    <Button
+        android:id="@+id/bt_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageSample" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id = "@+id/rcv_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
