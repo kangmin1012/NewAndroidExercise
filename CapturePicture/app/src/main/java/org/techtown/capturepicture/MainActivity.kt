@@ -4,7 +4,9 @@ package org.techtown.capturepicture
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.ImageDecoder
 import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
@@ -59,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             .setRationaleMessage("카메라 사진 권한 필요")
             .setDeniedMessage("카메라 권한 요청 거부")
             .setPermissions(
-//                android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
 //                android.Manifest.permission.READ_EXTERNAL_STORAGE,
                 android.Manifest.permission.CAMERA)
             .check()
@@ -104,9 +106,17 @@ class MainActivity : AppCompatActivity() {
 
         if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK){
            val file = File(currentPhotoPath)
+            if (Build.VERSION.SDK_INT < 28) {
             val bitmap = MediaStore.Images.Media
                 .getBitmap(contentResolver, Uri.fromFile(file))
             img_picture.setImageBitmap(bitmap)
+            }
+            else{
+                val decode = ImageDecoder.createSource(this.contentResolver,
+                    Uri.fromFile(file))
+                val bitmap = ImageDecoder.decodeBitmap(decode)
+                img_picture.setImageBitmap(bitmap)
+            }
         }
     }
 }
