@@ -1,0 +1,92 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.techtown.samplear"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:5:5-64
+11-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:5:22-62
+12
+13    <uses-feature
+13-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:6:5-78
+14        android:glEsVersion="0x00030000"
+14-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:6:19-51
+15        android:required="true" />
+15-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:6:52-75
+16    <uses-feature
+16-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:7:5-86
+17        android:name="android.hardware.camera.ar"
+17-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:7:19-60
+18        android:required="true" />
+18-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:7:61-84
+19
+20    <application
+20-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:9:5-25:19
+21        android:allowBackup="true"
+21-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:10:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.0.2] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\54b9d82b992557ed8f4de420fd3f4bef\core-1.0.2\AndroidManifest.xml:22:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:11:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:12:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:13:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:14:9-35
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:15:9-40
+30        <activity android:name="org.techtown.samplear.MainActivity" >
+30-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:16:9-22:20
+30-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:16:19-47
+31            <intent-filter>
+31-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:17:13-21:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:18:17-69
+32-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:18:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:20:17-77
+34-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:20:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <meta-data
+38-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:24:9-80
+39            android:name="com.google.ar.core"
+39-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:24:20-53
+40            android:value="required" />
+40-->C:\Users\KANGMINGU\Desktop\ar\arcore-android-sdk\samples\SampleAr\app\src\main\AndroidManifest.xml:24:54-78
+41        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+42        <meta-data
+42-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:33:9-35:41
+43            android:name="com.google.ar.core.min_apk_version"
+43-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:34:13-62
+44            android:value="191106000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+44-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:35:13-38
+45        <activity
+45-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:37:9-43:80
+46            android:name="com.google.ar.core.InstallActivity"
+46-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:38:13-62
+47            android:configChanges="keyboardHidden|orientation|screenSize"
+47-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:39:13-74
+48            android:excludeFromRecents="true"
+48-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:40:13-46
+49            android:exported="false"
+49-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:41:13-37
+50            android:launchMode="singleTop"
+50-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:42:13-43
+51            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+51-->[com.google.ar:core:1.15.0] C:\Users\KANGMINGU\.gradle\caches\transforms-2\files-2.1\37936915dee249cb196b4b0ccde7b024\core-1.15.0\AndroidManifest.xml:43:13-77
+52    </application>
+53
+54</manifest>
