@@ -4,13 +4,15 @@ package org.techtown.capturepicture
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.ImageDecoder
+import android.graphics.BitmapFactory
+import android.graphics.Matrix
+import android.media.ExifInterface
 import android.net.Uri
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.FileProvider
@@ -20,10 +22,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 import com.gun0912.tedpermission.PermissionListener
 import java.io.IOException
-import java.security.Permission
 import java.text.SimpleDateFormat
 import java.util.*
-import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity() {
     val REQUEST_IMAGE_CAPTURE = 1
@@ -105,18 +105,54 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK){
-           val file = File(currentPhotoPath)
-            if (Build.VERSION.SDK_INT < 28) {
-            val bitmap = MediaStore.Images.Media
-                .getBitmap(contentResolver, Uri.fromFile(file))
-            img_picture.setImageBitmap(bitmap)
+            val bitmap = BitmapFactory.decodeFile(currentPhotoPath)
+            lateinit var exif : ExifInterface
+
+            try{
+                exif = ExifInterface(currentPhotoPath)
+                var exifOrientation = 0
+                var exifDegree = 0
+
+                if (exif != null) {
+                    exifOrientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION,
+                        ExifInterface.ORIENTATION_NORMAL)
+                    exifDegree = exifOrientationToDegress(exifOrientation)
+                }
+
+                img_picture.setImageBitmap(rotate(bitmap, exifDegree))
+            }catch (e : IOException){
+                e.printStackTrace()
             }
-            else{
-                val decode = ImageDecoder.createSource(this.contentResolver,
-                    Uri.fromFile(file))
-                val bitmap = ImageDecoder.decodeBitmap(decode)
-                img_picture.setImageBitmap(bitmap)
-            }
+
         }
+    }
+
+    private fun exifOrientationToDegress(exifOrientation: Int): Int {
+        when(exifOrientation){
+            ExifInterface.ORIENTATION_ROTATE_90 ->{
+                Log.d("rotate","rotate90")
+                return 90
+            }
+            ExifInterface.ORIENTATION_ROTATE_180 -> {
+                Log.d("rotate","rotate180")
+                return 180
+            }
+            ExifInterface.ORIENTATION_ROTATE_270 ->{
+                Log.d("rotate","rotate270")
+                return 270
+            }
+            else -> {
+                Log.d("rotate","rotate0")
+                return 0
+            }
+
+        }
+    }
+
+    private fun rotate(bitmap: Bitmap, degree: Int) : Bitmap {
+        Log.d("rotate","init rotate")
+        val matrix = Matrix()
+        matrix.postRotate(degree.toFloat())
+        return Bitmap.createBitmap(bitmap, 0, 0, bitmap.width, bitmap.height, matrix,true)
     }
 }
