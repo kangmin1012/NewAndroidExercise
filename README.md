@@ -1,4 +1,4 @@
-# AndroidExcercise
+# NewAndroidExercise
 ---
 이 곳은 개인적인 안드로이드 공부하면서 실습한 예제를 저장한 곳입니다.
 
