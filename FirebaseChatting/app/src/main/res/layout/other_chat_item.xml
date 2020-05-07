@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:gravity="center_vertical"
+    android:layout_marginRight="100dp">
+
+    <ImageView
+        android:id="@+id/iv_yourchatitem_profile"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_yourchatitem_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/chat_you_background"
+        android:padding="12dp"
+        android:text="만나서 반가워요~"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/iv_yourchatitem_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tc_yourchatitem_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_yourchatitem_message"
+        android:text="상대방"
+        android:textColor="#b6b8c3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_yourchatitem_message"
+        app:layout_constraintTop_toBottomOf="@+id/tv_yourchatitem_message"
+        android:layout_alignLeft="@+id/tv_yourchatitem_message"
+        android:layout_marginLeft="8dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

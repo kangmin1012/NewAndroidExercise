@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "300360594696",
+    "firebase_url": "https://sample-chatting.firebaseio.com",
+    "project_id": "sample-chatting",
+    "storage_bucket": "sample-chatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300360594696:android:ac42fff166d0a8b7cb68bd",
+        "android_client_info": {
+          "package_name": "org.techtown.mingmangchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300360594696-ndq9cfu0m53fmjvnt7i89sf1hohqh7ba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.mingmangchat",
+            "certificate_hash": "957ad9edc1ae0d2fe032e9aa115f6e6986aa2eaa"
+          }
+        },
+        {
+          "client_id": "300360594696-14sp2herr5i46bov27dk9679rq0l564n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpnIylqo9KxuLRTdY1SgHLwHEPW-2XDtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300360594696-14sp2herr5i46bov27dk9679rq0l564n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
