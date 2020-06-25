@@ -1,0 +1,155 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="ani_n_clock"
+            android:width="300dp"
+            android:height="300dp"
+            android:viewportWidth="27"
+            android:viewportHeight="27">
+            <group android:name="group_1">
+                <path
+                    android:name="clock_1"
+                    android:pathData="M 24 2 L 3 2"
+                    android:strokeColor="#7401df"
+                    android:strokeWidth="3"
+                    android:strokeLineCap="square"/>
+                <path
+                    android:name="clock_2"
+                    android:pathData="M 3.6 3.5 L 13 13 L 3.6 23.5"
+                    android:strokeColor="#7401df"
+                    android:strokeWidth="3"
+                    android:strokeLineCap="square"/>
+                <path
+                    android:name="clock_3"
+                    android:pathData="M 23.44 3.4 L 14 13 L 23.4 23.5"
+                    android:strokeColor="#7401df"
+                    android:strokeWidth="3"
+                    android:strokeLineCap="square"/>
+                <path
+                    android:name="clock_4"
+                    android:pathData="M 3 25 L 24 25"
+                    android:strokeColor="#7401df"
+                    android:strokeWidth="3"
+                    android:strokeLineCap="square"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="clock_1">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="500"
+                    android:valueFrom="M 24 2 L 3 2"
+                    android:valueTo="M 25 14 L 14 2"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="M 25 14 L 14 2"
+                    android:valueTo="M 14 24 L 14 3"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="strokeColor"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="#7401df"
+                    android:valueTo="#01dfd7"
+                    android:valueType="colorType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="clock_2">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="500"
+                    android:valueFrom="M 3.6 3.5 L 13 13 L 3.6 23.5"
+                    android:valueTo="M 14 2 L 7 9 L 2 14"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="M 14 2 L 7 9 L 2 14"
+                    android:valueTo="M 24 5 L 14 13 L 3 5"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="strokeColor"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="#7401df"
+                    android:valueTo="#01dfd7"
+                    android:valueType="colorType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="clock_3">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="500"
+                    android:valueFrom="M 23.44 3.4 L 14 13 L 23.4 23.5"
+                    android:valueTo="M 25 14 L 20 19 L 14 25"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="M 25 14 L 20 19 L 14 25"
+                    android:valueTo="M 24 22 L 14 13 L 3 22"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="strokeColor"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="#7401df"
+                    android:valueTo="#01dfd7"
+                    android:valueType="colorType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="clock_4">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="500"
+                    android:valueFrom="M 3 25 L 24 25"
+                    android:valueTo="M 2 14 L 14 25"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="M 2 14 L 14 25"
+                    android:valueTo="M 14 3 L 14 24"
+                    android:valueType="pathType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="strokeColor"
+                    android:startOffset="500"
+                    android:duration="500"
+                    android:valueFrom="#7401df"
+                    android:valueTo="#01dfd7"
+                    android:valueType="colorType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
