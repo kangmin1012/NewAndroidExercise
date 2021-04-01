@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SampleKakaoLogin</string>
+    <string name="kakao_native_app_key">2d9b22bc5f3c75c199d44f2c7e4e0752</string>
+    <string name="kakao_redirect_scheme">kakao2d9b22bc5f3c75c199d44f2c7e4e0752</string>
+</resources>
