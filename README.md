@@ -7,3 +7,5 @@
 - [**CircularReveal**](https://github.com/kangmin1012/NewAndroidExercise/tree/CircularRevealAnimation)
 
 - [**MotionLayout**](https://github.com/kangmin1012/NewAndroidExercise/tree/MotionLayout)
+
+- [**SpringAnimation**](https://github.com/kangmin1012/NewAndroidExercise/tree/SpringAnimation)
