@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_ball_sky_200"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintDimensionRatio="1"
+        android:src="@drawable/ball_mono"
+        app:tint="@color/sky_200" />
+
+    <ImageView
+        android:id="@+id/img_ball_sky_500"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ball_mono"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@+id/img_ball_sky_200"
+        app:layout_constraintStart_toStartOf="@+id/img_ball_sky_200"
+        app:layout_constraintTop_toBottomOf="@+id/img_ball_sky_200"
+        app:layout_constraintWidth_percent="0.2"
+        app:tint="@color/sky_500" />
+
+    <ImageView
+        android:id="@+id/img_ball_sky_700"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ball_mono"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@+id/img_ball_sky_500"
+        app:layout_constraintStart_toStartOf="@+id/img_ball_sky_500"
+        app:layout_constraintTop_toBottomOf="@+id/img_ball_sky_500"
+        app:layout_constraintWidth_percent="0.2"
+        app:tint="@color/sky_700" />
+</androidx.constraintlayout.widget.ConstraintLayout>
