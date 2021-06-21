@@ -4,4 +4,6 @@
 
 아래 링크를 클릭해서 각각 예제를 확인해 보시면 됩니다.
 
+- [**CircularReveal**](https://github.com/kangmin1012/NewAndroidExercise/tree/CircularRevealAnimation)
+
 - [**MotionLayout**](https://github.com/kangmin1012/NewAndroidExercise/tree/MotionLayout)
