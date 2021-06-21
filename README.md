@@ -1,7 +1,3 @@
-# NewAndroidExercise
-
----
-
 ## MotionLayout
 
 Android Studio가 4.0으로 업데이트 되면서 Motion Editor가 추가되었습니다.  
