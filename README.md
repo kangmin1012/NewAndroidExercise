@@ -1,5 +1,9 @@
-# NewAndroidExercise
----
-이 곳은 개인적인 안드로이드 공부하면서 실습한 예제를 저장한 곳입니다.
+## CircularReveal
 
-브랜치를 통해서 각각 예제를 확인해 보시면 됩니다.
+화면 전환 애니메이션 중 하나인 `CircularReveal`입니다.
+
+- 원 모양의 파장 형태로 화면 전환
+- 하나의 액티비티에서 뷰의 전환 시 사용
+- Splash화면 전환으로도 사용하기에 적절해 보임
+
+<img src = "https://user-images.githubusercontent.com/55642709/122724969-780a9000-d2af-11eb-9f46-6cf0bbf1dbc9.gif" width="30%">
